@@ -10,11 +10,11 @@ Sobre o Tryunfo, é um projeto que simula a criação de cartas de um "Super Tru
 
 Abaixo imagens do projeto.
 
-![parte-1](https://github.com/LuizModolo/tryunfo-project-luiz/img/01.png)
-![parte-1](https://github.com/LuizModolo/tryunfo-project-luiz/img/02.png)
-![parte-1](https://github.com/LuizModolo/tryunfo-project-luiz/img/03.png)
-![parte-1](https://github.com/LuizModolo/tryunfo-project-luiz/img/04.png)
-![parte-1](https://github.com/LuizModolo/tryunfo-project-luiz/img/05.png)
-![parte-1](https://github.com/LuizModolo/tryunfo-project-luiz/img/06.png)
-![parte-1](https://github.com/LuizModolo/tryunfo-project-luiz/img/07.png)
-![parte-1](https://github.com/LuizModolo/tryunfo-project-luiz/img/08.png)
+![parte-1](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/01.png)
+![parte-2](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/02.png)
+![parte-3](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/03.png)
+![parte-4](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/04.png)
+![parte-5](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/05.png)
+![parte-6](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/06.png)
+![parte-7](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/07.png)
+![parte-8](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/08.png)
