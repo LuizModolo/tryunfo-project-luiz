@@ -11,10 +11,25 @@ Sobre o Tryunfo, é um projeto que simula a criação de cartas de um "Super Tru
 Abaixo imagens do projeto.
 
 ![parte-1](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/01.png)
+*tela inicial do projeto*
+
 ![parte-2](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/02.png)
+*tela de criação da carta - conteúdo e visualização prévia*
+
 ![parte-3](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/03.png)
+*Sessão das cartas criadas, ou o deck de cartas*
+
 ![parte-4](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/04.png)
+*Sessão das cartas criadas, ou o deck de cartas*
+
 ![parte-5](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/05.png)
+*Final da sessão das cartas criadas mais o rodapé da página*
+
 ![parte-6](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/06.png)
+*Nessa sessão demonstrando o uso do filtro de cartas por raridade*
+
 ![parte-7](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/07.png)
+*Nessa sessão demonstrando o uso do filtro de cartas por raridade*
+
 ![parte-8](https://github.com/LuizModolo/tryunfo-project-luiz/blob/master/img/08.png)
+*Nessa sessão demonstrando o uso do filtro de cartas por nome da carta*
