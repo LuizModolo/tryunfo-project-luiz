@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;400;700&display=swap') ;
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html {
+
+  --font: 'Epilogue' , sans-serif;
+
+  --font-title: georgia , 'Times New Roman' , times , serif;
+
+  --font-size: 1.2rem;
+
+  --color: #19f;
+
+  --color-light: #adf;
+
+  --color-dark: #018;
+
+  --radius: 0.2rem;
+}
+
+body {
+  margin: 0;
+}
+
+body, input, textarea, button {
+  font-family: var(--font);
+  font-size: var(--font-size);
+}
+
+h1, h2, h3 {
+  font-family: var(--font);
+}
+
+h1, h2, h3, p, ul {
+  margin: 1rem 0;
+}
+
+ul {
+  list-style: square;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+input:not( [ type = 'checkbox' ] ), textarea, select {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  display: block;
+  padding: 0.8rem;
+  transition: 0.2s;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  background: white;
+  border-color: var(--color);
+  box-shadow: 0 0 0 3px var(--color-light);
+  outline: none;
+}
+
+button {
+  background: var(--color);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--color-dark);
+  cursor: pointer;
+  padding: 0.8rem 1.6rem;
+  transition: 0.1s;
+}
+
+button:hover, button:focus {
+  background: var(--color);
+  box-shadow: 0 0 0 3px var(--color-light) , 0 0 0 4px var(--color);
+  outline: none;
+}
+
+button:active {
+  box-shadow: 0 0 0 3px var(--color) , 0 0 0 4px var(--color);
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.5;
+}
+
+hr {
+  border: 2px solid black;
+  margin: 2rem auto;
+}
+
+.headerApp {
+  align-items: center;
+  background-color: #036b52;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+}
+
+.headerApp h1 {
+  color: white;
+  margin: 0;
+}
+
+.mainSection {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.addCard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.addCard h1 {
+  text-align: center;
+}
+
+.addCard input {
+  margin: 1.2vh 0;
+}
+
+.addCard select {
+  margin: 1.2vh 0;
+}
+
+.addCard button {
+  align-self: center;
+  width: 30%;
+}
+
+.Atributo-01 {
+  align-items: center;
+  display: flex;
+}
+
+.Atributo-01 span {
+  flex: 1 2 0;
+}
+
+.Atributo-01 input {
+  flex: 2 1 0;
+}
+
+.Atributo-02 {
+  align-items: center;
+  display: flex;
+}
+
+.Atributo-02 span {
+  flex: 1 2 0;
+}
+
+.Atributo-02 input {
+  flex: 2 1 0;
+}
+
+.Atributo-03 {
+  align-items: center;
+  display: flex;
+}
+
+.Atributo-03 span {
+  flex: 1 2 0;
+}
+
+.Atributo-03 input {
+  flex: 2 1 0;
+}
+
+.Super-Trybe {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.Super-Trybe span {
+  margin-left: 10px;
+}
+
+.cardRender {
+  align-items: center;
+  background-color: #023031;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.cardRender h1 {
+  text-align: center;
+}
+
+.inputFields {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+}
+
+.cardTotal {
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+}
+
+.cardBg {
+  align-items: center;
+  background-color: #036b52;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 430px;
+  width: 275px;
+}
+
+.cardTop {
+  align-items: center;
+  background-color: #023031;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 30px;
+  justify-content: space-between;
+  margin-top: 12px;
+  width: 250px;
+}
+
+.cardTop h2 {
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+.cardTop p {
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+.cardImage img {
+  height: 160px;
+  width: 250px;
+}
+
+.cardDiscription {
+  align-items: flex-start;
+  background-color: #036b52;
+  color: white;
+  display: flex;
+  height: 30px;
+  justify-content: flex-start;
+  width: 250px;
+}
+
+.cardDiscription p {
+  font-size: 11px;
+  font-weight: 400;
+  margin: 0;
+  width: 250px;
+  word-wrap: break-word;
+}
+
+.cardAtrr {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-evenly;
+  width: 250px;
+}
+
+.atr {
+  align-items: center;
+  background-color: lightgray;
+  border-radius: 0 10px;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 220px;
+}
+
+.atr h4 {
+  color: #023031;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.atr p {
+  color: #023031;
+  font-weight: 700;
+  margin-left: 10px;
+  text-align: start;
+}
+
+.cardBotton {
+  align-items: center;
+  background-color: #b7bc06;
+  border-radius: 0 0 10px 10px;
+  color: #023031;
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+  width: 250px;
+}
+
+.cardBotton p {
+  color: #023031;
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.secondSection {
+  align-items: center;
+  background-color: #023031;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.secondSection h1 {
+  background-color: #036b52;
+  color: white;
+  margin-top: 0;
+  padding: 30px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.secondSectionContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sectionFilter {
+  color: white;
+  margin-top: 40px;
+}
+
+.inputFilterFields {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.printed-cards {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.saved-card {
+  margin: 40px;
+}
+
+.saved-card2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.saved-card2 button {
+  margin: 20px 0;
+}
+
+.footer {
+  align-items: center;
+  background-color: #036b52;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer h4 {
+  color: white;
+  font-size: 0.85em;
+  margin: 0;
+}
+
+.footer p a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer p a:hover {
+  font-weight: 700;
+}
