@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/tryunfo-project-luiz/static/css/main.f121f58d.chunk.css",
+    "main.js": "/tryunfo-project-luiz/static/js/main.44ac4070.chunk.js",
+    "main.js.map": "/tryunfo-project-luiz/static/js/main.44ac4070.chunk.js.map",
+    "runtime-main.js": "/tryunfo-project-luiz/static/js/runtime-main.ce83ba5e.js",
+    "runtime-main.js.map": "/tryunfo-project-luiz/static/js/runtime-main.ce83ba5e.js.map",
+    "static/js/2.c07f352f.chunk.js": "/tryunfo-project-luiz/static/js/2.c07f352f.chunk.js",
+    "static/js/2.c07f352f.chunk.js.map": "/tryunfo-project-luiz/static/js/2.c07f352f.chunk.js.map",
+    "index.html": "/tryunfo-project-luiz/index.html",
+    "static/css/main.f121f58d.chunk.css.map": "/tryunfo-project-luiz/static/css/main.f121f58d.chunk.css.map",
+    "static/js/2.c07f352f.chunk.js.LICENSE.txt": "/tryunfo-project-luiz/static/js/2.c07f352f.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/tryunfo-project-luiz/static/media/water_pokemon_card_by_maskadra42_db506yk.4334f1c8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ce83ba5e.js",
+    "static/js/2.c07f352f.chunk.js",
+    "static/css/main.f121f58d.chunk.css",
+    "static/js/main.44ac4070.chunk.js"
+  ]
+}
