@@ -14,11 +14,11 @@ class Card extends React.Component {
       cardTrunfo } = this.props;
 
     return (
-      <div className="cardTotal">
+      <div className={ cardRare }>
         <div className="cardBg">
           <div className="cardTop">
             <h2 data-testid="name-card">{ cardName }</h2>
-            { cardTrunfo && <p data-testid="trunfo-card">Super Trunfo</p>}
+            { cardTrunfo && <p data-testid="trunfo-card">ST</p>}
           </div>
           <div className="cardImage">
             { cardImage !== '' && (
@@ -31,7 +31,7 @@ class Card extends React.Component {
             { cardAttr1 !== 0 && (
               <div className="atr">
                 <h4>
-                  Atributo A   . . . . . . .
+                  Attack - - - - - - - - - - - - - - - - -
                 </h4>
                 <p data-testid="attr1-card">
                   { cardAttr1 }
@@ -40,7 +40,7 @@ class Card extends React.Component {
             { cardAttr2 !== 0 && (
               <div className="atr">
                 <h4>
-                  Atributo B   . . . . . . .
+                  Defense - - - - - - - - - - - - - - - -
                 </h4>
                 <p data-testid="attr2-card">
                   { cardAttr2 }
@@ -49,7 +49,7 @@ class Card extends React.Component {
             { cardAttr3 !== 0 && (
               <div className="atr">
                 <h4>
-                  Atributo C   . . . . . . .
+                  Special - - - - - - - - - - - - - - - - -
                 </h4>
                 <p data-testid="attr3-card">
                   { cardAttr3 }

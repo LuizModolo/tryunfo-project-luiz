@@ -11,10 +11,10 @@ const initialState = {
   cardAttr2: 0,
   cardAttr3: 0,
   cardImage: '',
-  cardRare: 'normal',
+  cardRare: 'Fire-x',
   cardTrunfo: false,
   filterCard: '',
-  cardRareFilter: 'todas',
+  cardRareFilter: 'All',
   cardTrunfoFilter: false,
   isSaveButtonDisabled: true,
 };
@@ -54,8 +54,8 @@ class App extends React.Component {
     const num1 = Number(cardAttr1);
     const num2 = Number(cardAttr2);
     const num3 = Number(cardAttr3);
-    const maxSum = 210;
-    const maxNum = 90;
+    const maxSum = 300;
+    const maxNum = 100;
     if (
       num1 + num2 + num3 <= maxSum
       && num1 <= maxNum
@@ -105,7 +105,7 @@ class App extends React.Component {
     if (filterCard !== '') {
       return savedCard.filter((card) => card.cardName.includes(filterCard));
     }
-    if (cardRareFilter !== 'todas') {
+    if (cardRareFilter !== 'All') {
       return savedCard.filter((card) => (card.cardRare === cardRareFilter));
     }
     return savedCard;
@@ -114,13 +114,13 @@ class App extends React.Component {
   render() {
     const { savedCard } = this.state;
     return (
-      <div>
+      <div className="secondBody">
         <header className="headerApp">
-          <h1>Tryunfo - The Game!</h1>
+          <h1>Pokemon Cards - The Game!</h1>
         </header>
         <div className="mainSection">
           <div className="addCard">
-            <h1>Adicionar nova carta</h1>
+            <h1>Add New Card</h1>
             <Form
               { ...this.state }
               onInputChange={ this.handlePrint }
@@ -134,7 +134,7 @@ class App extends React.Component {
           </div>
         </div>
         <div className="secondSection">
-          <h1>Cartas criadas</h1>
+          <h1>Created Cards - Deck</h1>
           <div className="secondSectionContent">
             <div className="sectionFilter">
               <FormFilter
@@ -154,7 +154,7 @@ class App extends React.Component {
                       onClick={ () => this
                         .removeButtonClick(card.cardName, card.cardTrunfo) }
                     >
-                      Remover
+                      Remove
                     </button>
                   </div>
                 </div>))}
@@ -163,7 +163,7 @@ class App extends React.Component {
         </div>
         <footer className="footer">
           <h4>
-            Todos os direitos reservados Grupo Jupiter
+            All rights reserved to Jupiter group
             {' '}
             <span>&#169;</span>
           </h4>

@@ -22,23 +22,25 @@ class Form extends React.Component {
     return (
       <div className="inputFields">
         <Input
-          labeltext="Nome"
+          labeltext="Name"
           type="text"
           testid="name-input"
+          maxLength='11'
           name="cardName"
           value={ cardName }
           onChange={ onInputChange }
         />
         <Input
-          labeltext="Descrição"
+          labeltext="Description"
           type="textarea"
+          maxLength='141'
           testid="description-input"
           name="cardDescription"
           value={ cardDescription }
           onChange={ onInputChange }
         />
         <Input
-          labeltext="Atributo-01"
+          labeltext="Attack"
           type="number"
           testid="attr1-input"
           name="cardAttr1"
@@ -46,7 +48,7 @@ class Form extends React.Component {
           onChange={ onInputChange }
         />
         <Input
-          labeltext="Atributo-02"
+          labeltext="Defense"
           type="number"
           testid="attr2-input"
           name="cardAttr2"
@@ -54,7 +56,7 @@ class Form extends React.Component {
           onChange={ onInputChange }
         />
         <Input
-          labeltext="Atributo-03"
+          labeltext="Special"
           type="number"
           testid="attr3-input"
           name="cardAttr3"
@@ -62,7 +64,7 @@ class Form extends React.Component {
           onChange={ onInputChange }
         />
         <Input
-          labeltext="Imagem"
+          labeltext="Image"
           type="text"
           testid="image-input"
           name="cardImage"
@@ -70,15 +72,15 @@ class Form extends React.Component {
           onChange={ onInputChange }
         />
         <Select
-          labeltext="Raridade"
+          labeltext="Type"
           type="select"
           testid="rare-input"
           name="cardRare"
           value={ cardRare }
           onChange={ onInputChange }
         />
-        { hasTrunfo ? <p>Você já tem um Super Trunfo em seu baralho</p> : <Input
-          labeltext="Super-Trybe"
+        { hasTrunfo ? <p>You already have a ST Card in your deck!</p> : <Input
+          labeltext="ST-Card"
           type="checkbox"
           testid="trunfo-input"
           name="cardTrunfo"
@@ -91,7 +93,7 @@ class Form extends React.Component {
           disabled={ isSaveButtonDisabled }
           onClick={ onSaveButtonClick }
         >
-          Salvar
+          Save
         </button>
       </div>
     );

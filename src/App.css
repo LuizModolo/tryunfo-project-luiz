@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;400;700&display=swap') ;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
 
 *, *:after, *:before {
   box-sizing: border-box;
@@ -6,9 +7,9 @@
 
 html {
 
-  --font: 'Epilogue' , sans-serif;
+  --font: 'Lato', sans-serif;
 
-  --font-title: georgia , 'Times New Roman' , times , serif;
+  --font-title: 'Lato', sans-serif;
 
   --font-size: 1.2rem;
 
@@ -100,7 +101,11 @@ hr {
 
 .headerApp {
   align-items: center;
-  background-color: #036b52;
+  background-color: black;
+  background-position: 90% 40%;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-image: url(./img/pokémon-charmander-squirtle-bulbasaur-wallpaper.jpg);
   display: flex;
   height: 100px;
   justify-content: center;
@@ -144,46 +149,46 @@ hr {
   width: 30%;
 }
 
-.Atributo-01 {
+.Attack {
   align-items: center;
   display: flex;
 }
 
-.Atributo-01 span {
+.Attack span {
   flex: 1 2 0;
 }
 
-.Atributo-01 input {
+.Attack input {
   flex: 2 1 0;
 }
 
-.Atributo-02 {
+.Defense {
   align-items: center;
   display: flex;
 }
 
-.Atributo-02 span {
+.Defense span {
   flex: 1 2 0;
 }
 
-.Atributo-02 input {
+.Defense input {
   flex: 2 1 0;
 }
 
-.Atributo-03 {
+.Special {
   align-items: center;
   display: flex;
 }
 
-.Atributo-03 span {
+.Special span {
   flex: 1 2 0;
 }
 
-.Atributo-03 input {
+.Special input {
   flex: 2 1 0;
 }
 
-.Super-Trybe {
+.ST-Card {
   align-items: center;
   display: flex;
   flex-direction: row-reverse;
@@ -192,18 +197,24 @@ hr {
   text-align: center;
 }
 
-.Super-Trybe span {
+.ST-Card span {
   margin-left: 10px;
 }
 
 .cardRender {
   align-items: center;
-  background-color: #023031;
+  background-image: url(./img/pokeball.jpg);
+  background-position: 70% 85%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #ff2229;
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: center;
   width: 100%;
+  position: relative;
+  z-index: -2;
 }
 
 .cardRender h1 {
@@ -217,101 +228,528 @@ hr {
   width: 25vw;
 }
 
-.cardTotal {
+.Grass {
   align-items: center;
-  background-color: white;
+  background-image: url(./img/grass.png);
+  background-size: 100% 101%;
   border-radius: 15px;
   box-shadow: 0 0 1em black;
   display: flex;
   height: 455px;
   justify-content: center;
   width: 300px;
+  position: relative;
+}
+
+.Fire {
+  align-items: center;
+  background-image: url(./img/fire.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Water {
+  align-items: center;
+  background-image: url(./img/water.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Eletric {
+  align-items: center;
+  background-image: url(./img/eletric.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Psychic {
+  align-items: center;
+  background-image: url(./img/psychic.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Fighting {
+  align-items: center;
+  background-image: url(./img/Fighting.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Dark {
+  align-items: center;
+  background-image: url(./img/dark.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Metal {
+  align-items: center;
+  background-image: url(./img/Basic\ -\ Steel.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Dragon {
+  align-items: center;
+  background-image: url(./img/dragon2.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Fairy {
+  align-items: center;
+  background-image: url(./img/fairy.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Normal {
+  align-items: center;
+  background-image: url(./img/normal\ 2.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Grass-x {
+  align-items: center;
+  background-image: url(./img/grass_pokemon_card_by_maskadra42_db50a4r.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Fire-x {
+  align-items: center;
+  background-image: url(./img/fire_pokemon_card_by_maskadra42_db50c7e.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Water-x {
+  align-items: center;
+  background-image: url(./img/water_pokemon_card_by_maskadra42_db506yk.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Eletric-x {
+  align-items: center;
+  background-image: url(./img/electrik_pokemon_card_by_maskadra42_db5d1rk.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Psychic-x {
+  align-items: center;
+  background-image: url(./img/psychic_pokemon_card_by_maskadra42_db5d5h0.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Fighting-x {
+  align-items: center;
+  background-image: url(./img/fighting_pokemon_card_by_maskadra42_db5fda4.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Dark-x {
+  align-items: center;
+  background-image: url(./img/dark_pokemon_card_by_maskadra42_db5fo4i.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Metal-x {
+  align-items: center;
+  background-image: url(./img/steel_pokemon_card_by_maskadra42_db4ak67.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Dragon-x {
+  align-items: center;
+  background-image: url(./img/dragon.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Fairy-x {
+  align-items: center;
+  background-image: url(./img/fairy_pokemon_card_by_maskadra42_db4c33b.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Normal-x {
+  align-items: center;
+  background-image: url(./img/normal_pokemon_card_by_maskadra42.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Sound-x {
+  align-items: center;
+  background-image: url(./img/sound.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Cyber-x {
+  align-items: center;
+  background-image: url(./img/cyber.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Light-x {
+  align-items: center;
+  background-image: url(./img/light.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Flying-x {
+  align-items: center;
+  background-image: url(./img/flying.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Rock-x {
+  align-items: center;
+  background-image: url(./img/rock_pokemon_card_by_maskadra42_db5fkr2.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Ground-x {
+  align-items: center;
+  background-image: url(./img/ground_pokemon_card_by_maskadra42_db5fh17.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Bug-x {
+  align-items: center;
+  background-image: url(./img/bug_pokemon_card_by_maskadra42_db50b2n.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Cosmic-x {
+  align-items: center;
+  background-image: url(./img/cosmic_card_reverse_by_maskadra42_db4rfss.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Ghost-x {
+  align-items: center;
+  background-image: url(./img/ghost_pokemon_card_by_maskadra42_db49prx.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Ice-x {
+  align-items: center;
+  background-image: url(./img/ice_pokemon_card_by_maskadra42_db45etc.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
+}
+
+.Poison-x {
+  align-items: center;
+  background-image: url(./img/poison_pokemon_card_by_maskadra42_db5f6gn.png);
+  background-size: 100% 101%;
+  border-radius: 15px;
+  box-shadow: 0 0 1em black;
+  display: flex;
+  height: 455px;
+  justify-content: center;
+  width: 300px;
+  position: relative;
 }
 
 .cardBg {
   align-items: center;
-  background-color: #036b52;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   height: 430px;
   width: 275px;
+  color:black;
+  text-shadow: rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 0.540302px 0.841471px 0px, rgb(255, 255, 255) -0.416147px 0.909297px 0px, rgb(255, 255, 255) -0.989993px 0.14112px 0px, rgb(255, 255, 255) -0.653644px -0.756803px 0px, rgb(255, 255, 255) 0.283662px -0.958924px 0px, rgb(255, 255, 255) 0.96017px -0.279416px 0px;
 }
 
 .cardTop {
   align-items: center;
-  background-color: #023031;
   border-radius: 10px 10px 0 0;
-  color: white;
   display: flex;
-  flex-direction: row-reverse;
   height: 30px;
   justify-content: space-between;
-  margin-top: 12px;
+  margin-top: 2px;
+  margin-left: 100px;
   width: 250px;
+  position: relative;
 }
 
 .cardTop h2 {
-  font-size: 15px;
-  margin-right: 15px;
+  font-size: 20px;
 }
 
 .cardTop p {
-  font-size: 12px;
-  margin-left: 15px;
+  font-size: 18px;
+  margin-right: 70px;
+}
+
+.cardImage {
+  background-color: white;
+  position: relative;
+  height: 245px;
+  width: 300px;
+  z-index: -1;
 }
 
 .cardImage img {
-  height: 160px;
-  width: 250px;
+  position: relative;
+  height: 190px;
+  width: 300px;
+  z-index: -1;
 }
 
 .cardDiscription {
   align-items: flex-start;
-  background-color: #036b52;
-  color: white;
   display: flex;
   height: 30px;
+  margin-top: 8px;
   justify-content: flex-start;
   width: 250px;
 }
 
 .cardDiscription p {
-  font-size: 11px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.1;
   margin: 0;
   width: 250px;
   word-wrap: break-word;
+  margin: 0 8px;
+  text-align: justify;
 }
 
 .cardAtrr {
   align-items: center;
-  background-color: white;
   display: flex;
   flex-direction: column;
   height: 150px;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 250px;
+  margin-top: 8px;
 }
 
 .atr {
   align-items: center;
-  background-color: lightgray;
   border-radius: 0 10px;
   display: flex;
-  height: 30px;
-  justify-content: center;
-  width: 220px;
+  height: 23px;
+  justify-content: space-between;
+  width: 230px;
 }
 
 .atr h4 {
-  color: #023031;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 700;
+  align-items: flex-start;
 }
 
 .atr p {
-  color: #023031;
   font-weight: 700;
   margin-left: 10px;
   text-align: start;
@@ -319,34 +757,41 @@ hr {
 
 .cardBotton {
   align-items: center;
-  background-color: #b7bc06;
   border-radius: 0 0 10px 10px;
-  color: #023031;
   display: flex;
   height: 30px;
-  justify-content: flex-end;
-  margin-bottom: 12px;
-  width: 250px;
+  margin-bottom: 18px;
+  margin-top: -6px;
+  width: 120px;
+  justify-content: center;
+  align-self: flex-end;
+  margin-right: 20px;
 }
 
 .cardBotton p {
-  color: #023031;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
-  margin-right: 15px;
 }
 
 .secondSection {
   align-items: center;
-  background-color: #023031;
+  background-image: url(./img/diagonal-stripes.svg);
+  /* background-color: #ff2229; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
+  position: relative;
+  z-index: 0;
 }
 
+/* .secondBody {
+  position: relative;
+  z-index: -11;
+} */
+
 .secondSection h1 {
-  background-color: #036b52;
+  background-color: black;
   color: white;
   margin-top: 0;
   padding: 30px 0;
@@ -359,17 +804,20 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
 }
 
 .sectionFilter {
   color: white;
   margin-top: 40px;
+  position: relative;
 }
 
 .inputFilterFields {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .printed-cards {
@@ -378,10 +826,12 @@ hr {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 80%;
+  position: relative;
 }
 
 .saved-card {
   margin: 40px;
+  position: relative;
 }
 
 .saved-card2 {
@@ -389,15 +839,17 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .saved-card2 button {
   margin: 20px 0;
+  position: relative;
 }
 
 .footer {
   align-items: center;
-  background-color: #036b52;
+  background-color: black;
   display: flex;
   flex-direction: column;
   height: 100px;

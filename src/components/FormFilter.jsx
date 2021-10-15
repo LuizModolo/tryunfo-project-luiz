@@ -14,7 +14,7 @@ class Form extends React.Component {
     return (
       <div className="inputFilterFields">
         <Input
-          labeltext="Buscar Cartas"
+          labeltext="Search Cards"
           type="text"
           testid="name-filter"
           name="filterCard"
@@ -22,7 +22,7 @@ class Form extends React.Component {
           onChange={ onInputChange }
         />
         <SelectFilter
-          labeltext="Raridade"
+          labeltext="Type"
           type="select"
           testid="rare-filter"
           name="cardRareFilter"
@@ -30,7 +30,7 @@ class Form extends React.Component {
           onChange={ onInputChange }
         />
         <Input
-          labeltext="Super Trybe Info"
+          labeltext="ST-Card"
           type="checkbox"
           testid="trunfo-filter"
           name="cardTrunfoFilter"
